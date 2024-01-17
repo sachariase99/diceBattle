@@ -1,0 +1,22 @@
+.diceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .dice {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        border: 1px solid black;
+        border-radius: 5px;
+
+        .diceNumber {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
