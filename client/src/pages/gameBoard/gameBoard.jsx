@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './gameBoard.module.scss';
 
 const GameBoard = () => {
   return (
-    <div>
+    <div className={styles.navLinks}>
+      <h1>Choose Gamemode</h1>
         <ul>
-            <li><Link to="/playerboard">Player</Link></li>
-            <li><Link to="/aiboard">Ai</Link></li>
+            <li><Link className={styles.link} to="/playerboard">Player</Link></li>
+            <li><Link className={styles.link} to="/aiboard">AI</Link></li>
         </ul>
     </div>
   )

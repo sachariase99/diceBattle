@@ -25,14 +25,13 @@ const Dice = ({ rollDice, currentPlayer, aiTurn }) => {
   const handleRollDice = () => {
     setRolledNumber(null);
 
-    // If it's the AI's turn, set rolling to true until the AI turn is complete
     if (aiTurn) {
       setRolling(true);
       setTimeout(() => {
         setRolling(false);
       }, 1500);
     } else {
-      // If playing against a person, start the usual rolling animation
+      
       setRolling(true);
     }
   };
