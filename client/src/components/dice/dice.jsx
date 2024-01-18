@@ -27,6 +27,7 @@ const Dice = ({ rollDice, currentPlayer, aiTurn }) => {
 
     if (aiTurn) {
       setRolling(true);
+      console.log('hej');
       setTimeout(() => {
         setRolling(false);
       }, 1500);

@@ -1,7 +1,6 @@
 import './styles/App.scss'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { GameBoard, PlayerBoard, AiBoard } from './pages'
-import { Player } from './components'
 
 function App() {
 
